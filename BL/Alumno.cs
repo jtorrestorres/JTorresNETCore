@@ -96,8 +96,8 @@ namespace BL
             {
                 using (DL.JTorresProgramacionNCapas08122021Context context = new DL.JTorresProgramacionNCapas08122021Context())
                 {
-
-                    var query = context.Database.ExecuteSqlRaw($"AlumnoAdd {alumno.Nombre},  {alumno.ApellidoPaterno}, {alumno.ApellidoMaterno}");
+                    //string test = Encoding.ASCII.GetString(alumno.Imagen);
+                    var query = context.Database.ExecuteSqlRaw($"AlumnoAdd '{alumno.Nombre}','{alumno.ApellidoPaterno}','{alumno.ApellidoMaterno}','{Encoding.ASCII.GetString(alumno.Imagen)}'");
 
 
                     if (query >= 1)

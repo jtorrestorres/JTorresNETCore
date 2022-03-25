@@ -43,7 +43,7 @@ namespace DL
                 //.Build();
                 //            optionsBuilder.UseSqlServer(configuration.GetConnectionString("DefaultConnection"));
 
-                //var cadena= ConfigurationManager.ConnectionStrings["DefaultConnection"].ToString();
+             //   var cadena= ConfigurationManager["DefaultConnection"].ToString();
                 optionsBuilder.UseSqlServer("Server =.; Database = JTorresProgramacionNCapas08122021; Trusted_Connection = True; User ID = sa; Password = pass@word1;");
                 //Server =.; Database = JTorresProgramacionNCapas08122021; Trusted_Connection = True; User ID = sa; Password = pass@word1;
             }

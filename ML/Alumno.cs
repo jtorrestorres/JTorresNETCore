@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,14 +9,18 @@ namespace ML
 {
     public class Alumno
     {
-        
-            public int IdAlumno { get; set; }
-            public string Nombre { get; set; }
-            public string ApellidoPaterno { get; set; }
-            public string ApellidoMaterno { get; set; }
-            public byte[] Imagen { get; set; }
-            public ML.Grupo Grupo { get; set; }
-            public List<object> Alumnos { get; set; }
-        
+
+        public int IdAlumno { get; set; }
+        public string Nombre { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string ApellidoMaterno { get; set; }
+        public byte[] Imagen { get; set; }
+        public ML.Grupo Grupo { get; set; }
+        public List<object> Alumnos { get; set; }
+
+
+        public IFormFile Foto { set; get; }
+
+
     }
 }
